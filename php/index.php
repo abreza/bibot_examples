@@ -5,7 +5,7 @@
 </head>
 <body>
     <form action="" method="POST">
-        <div class="bibot-captcha" data-sitekey="yout_site_key"></div>
+        <div class="bibot-captcha" data-sitekey="your_site_key"></div>
         <input type="submit" value="Submit">
     </form>
     <script src="https://bibot.ir/bibot.min.js"></script>
