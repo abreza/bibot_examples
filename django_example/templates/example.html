@@ -76,10 +76,15 @@
     </ul>
 {% endif %}
 <form action="" method="POST">
-    <div class="bibot-captcha" data-sitekey="your_site_key"></div>
+    <div class="bibot-captcha" data-sitekey="your_site_key" data-callback="bibot_callback"></div>
     <input type="submit" value="Submit">
     {% csrf_token %}
 </form>
 <script src="https://bibot.ir/bibot.min.js"></script>
+<script>
+    function bibot_callback(bibot_response){
+        alert('bibot-response: ' + bibot_response);
+    }
+</script>
 </body>
 </html>
