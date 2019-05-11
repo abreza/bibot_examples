@@ -1,0 +1,30 @@
+{
+  "name": "nodejs_example",
+  "version": "1.0.0",
+  "description": "It is a new captcha.(https://bibot.ir)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abreza/bibot_examples.git"
+  },
+  "keywords": [
+    "captcha",
+    "bibot",
+    "example"
+  ],
+  "author": "Devaince",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abreza/bibot_examples/issues"
+  },
+  "homepage": "https://github.com/abreza/bibot_examples#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "https": "^1.0.0"
+  }
+}
