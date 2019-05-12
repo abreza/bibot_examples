@@ -10,9 +10,11 @@
 
 </head>
 <body>
-<% if(locals.message ){ %>
+<% if(locals.messages){ %>
     <ul class="back_messages">
-        <li class='<%= message_tag %>'> <%= message %>  </li>
+        <% for (var i = 0; i < messages.length; i++){ %>
+            <li class='<%= messages[i].tag %>'><%= messages[i].text %></li>
+        <% } %>
     </ul>
 <% } %>
 <form action="" method="POST">
