@@ -1,7 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-    <div class="bibot-captcha" data-sitekey="only-demo"></div>
+    <div class="bibot-captcha" data-sitekey="only-demo" data-callback="bibot_callback"></div>
     <script src="https://bibot.ir/bibot.min.js"></script>
+    <script>
+        function bibot_callback(bibot_response) {
+            if(bibot_response){
+                alert('It\'s demo and we can\'t make sure you are verified. :))')
+            }
+        }
+    </script>
 </body>
 </html>
