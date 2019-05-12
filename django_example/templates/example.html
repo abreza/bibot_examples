@@ -13,7 +13,7 @@
 {% if messages %}
     <ul class="back_messages">
         {% for message in messages %}
-            <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+            <li {% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
         {% endfor %}
     </ul>
 {% endif %}
@@ -24,8 +24,8 @@
 </form>
 <script src="https://bibot.ir/bibot.min.js"></script>
 <script>
-    function bibot_callback(bibot_response){
-        alert('bibot-response: ' + bibot_response);
+    function bibot_callback(bibot_response) {
+        alert('bibot_callback:\n bibot-response = \n' + bibot_response)
     }
 </script>
 </body>
