@@ -2,70 +2,12 @@
 <html>
 <head>
     <title>Bibot Example</title>
-    <style>
-        /* Safari 4.0 - 8.0 */
-        @-webkit-keyframes message_move {
-            0% {
-                left: -100px;
-            }
-            25% {
-                left: 200px;
-            }
-            30% {
-                left: 150px;
-            }
-            100% {
-                left: -100px;
-            }
-        }
 
-        /* Standard syntax */
-        @keyframes message_move {
-            0% {
-                left: -500px;
-            }
-            15% {
-                left: 200px;
-            }
-            30% {
-                left: 150px;
-            }
-            90% {
-                left: 150px;
-            }
-            100% {
-                left: -500px;
-            }
-        }
+    <!--               message styles               -->
+    <link rel="stylesheet" type="text/css"
+          href="https://res.cloudinary.com/dclfeq8cv/raw/upload//examples/style/message_style.css">
+    <!--               message styles               -->
 
-        .back_messages {
-            position: absolute;
-            top: 60px;
-            left: -500px;
-            -webkit-animation: message_move 10s;
-            animation: message_move 10s;
-            z-index: 10000;
-            list-style-type: none;
-        }
-
-        .back_messages li {
-            direction: ltr;
-            padding: 20px;
-            margin: 5px;
-            border-radius: 5px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            text-align: center;
-            color: white;
-        }
-
-        .back_messages li.error {
-            background: red;
-        }
-
-        .back_messages li.success {
-            background: green;
-        }
-    </style>
 </head>
 <body>
 <% if(locals.message ){ %>
