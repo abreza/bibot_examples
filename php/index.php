@@ -16,7 +16,7 @@
 if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['bibot-response']) && !empty($_POST['bibot-response']))
 {
     $secret_key = 'your_secret_key';
-    $data = array('response' => $_POST['bibot-response'], 'secretkey' => $secret_key);
+    $data = array('response' => $_POST['bibot-response'], 'secret' => $secret_key);
     $options = array(
         'http' => array(
             'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
